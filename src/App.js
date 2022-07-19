@@ -9,13 +9,13 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-black">
-      <h1 className="text-3xl font-bold text-white uppercase font-varela mx-2 my-2">
+      <h1 className="text-3xl font-bold text-white uppercase font-varela m-2">
         It's Transposing Time
       </h1>
-      <p className="text-l font-bold text-white uppercase font-varela mx-2 my-2">
+      <p className="text-l font-bold text-white uppercase font-varela m-2">
         Current Tuning: {tuning}
       </p>
-      <div>
+      <div className="my-6">
         {incrementSteps.map((increment) => (
           <IncrementButtons
             setTuning={setTuning}
@@ -29,7 +29,7 @@ function App() {
         {displayedTuning.map((note, i) => (
           <p
             key={note + i}
-            className="flex-col text-3xl font-bold text-white uppercase font-varela"
+            className="flex-col text-3xl font-bold text-white uppercase font-varela mx-2"
           >
             {note}
           </p>
