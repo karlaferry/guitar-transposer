@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-black">
       <h1 className="text-3xl font-bold text-white uppercase font-varela m-2">
-        It's Transposing Time
+        It's Transposing Time 🎸
       </h1>
       <p className="text-l font-bold text-white uppercase font-varela m-2">
         Current Tuning: {tuning}
@@ -27,12 +27,14 @@ function App() {
       </div>
       <div className="flex">
         {displayedTuning.map((note, i) => (
-          <p
+          <div
+            className="flex bg-white mx-2 w-14 h-14 justify-center items-center rounded-full"
             key={note + i}
-            className="flex-col text-3xl font-bold text-white uppercase font-varela mx-2"
           >
-            {note}
-          </p>
+            <p className="flex-col text-3xl font-bold text-black uppercase font-varela">
+              {note}
+            </p>
+          </div>
         ))}
       </div>
     </div>
