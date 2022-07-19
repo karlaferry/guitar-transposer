@@ -1,6 +1,6 @@
 import { useState } from "react";
 import IncrementButtons from "./Components/IncrementButtons";
-import { adjustTuning } from "./utils/utils";
+import adjustTuning from "./utils/utils.js";
 
 function App() {
   const [displayedTuning, setDisplayedTuning] = useState(adjustTuning(0));

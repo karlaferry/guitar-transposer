@@ -1,4 +1,4 @@
-exports.adjustTuning = (increment) => {
+export default function adjustTuning(increment) {
   const notes = [
     "A",
     "A#",
@@ -19,4 +19,4 @@ exports.adjustTuning = (increment) => {
   notes.push(...notes.splice(0, increment));
   // return only the required chord
   return [notes[7], notes[0], notes[5], notes[10], notes[2], notes[7]];
-};
+}

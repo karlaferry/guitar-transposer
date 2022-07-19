@@ -1,5 +1,5 @@
 import React from "react";
-import { adjustTuning } from "../utils/utils";
+import adjustTuning from "../utils/utils";
 
 export default function IncrementButtons({
   setTuning,

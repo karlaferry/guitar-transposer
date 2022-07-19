@@ -1,4 +1,4 @@
-const { adjustTuning } = require("../utils/utils");
+import adjustTuning from "../utils/utils";
 
 describe("#adjustTuning function", () => {
   it("returns an array", () => {
